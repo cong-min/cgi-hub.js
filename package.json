@@ -1,0 +1,33 @@
+{
+  "name": "cgi-hub.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "watch": "lerna run watch --parallel",
+    "lint": "eslint --fix \"**/*.{js,ts}\""
+  },
+  "repository": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@tencent/eslint-config-tencent": "^0.5.1",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "typescript": "^3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "umd",
+    "target": "ES5",
+    "strict": true,
+    "noImplicitAny": false,
+    "declaration": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+}

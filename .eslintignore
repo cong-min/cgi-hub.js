@@ -1,0 +1,5 @@
+dist
+templates
+test
+__tests__
+node_modules

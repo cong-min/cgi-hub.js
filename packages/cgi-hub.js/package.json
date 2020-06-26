@@ -1,0 +1,12 @@
+{
+  "name": "cgi-hub.js",
+  "version": "1.0.0-beta",
+  "description": "CGI Hub JavaScript Library",
+  "license": "MIT",
+  "repository": {},
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {}
+}

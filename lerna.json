@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-beta",
+  "command": {
+    "publish": {
+      "allowBranch": [
+        "master",
+        "stable"
+      ],
+      "message": "publish(release): %s"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ]
+}
