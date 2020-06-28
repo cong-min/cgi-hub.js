@@ -14,7 +14,7 @@ export declare namespace CgiHub {
          * @param requestOptions 请求参数
          * @return 请求响应结果 (支持 Promise)
          * */
-        fetch: <TResp>(requestOptions: RequestOptions) => PromiseLike<TResp | any> | TResp;
+        fetch: <TResp>(requestOptions: RequestOptions) => PromiseLike<TResp> | TResp;
         /**
          * fetch 请求后公共处理方法
          * @lifecycle afterFetch
@@ -22,7 +22,7 @@ export declare namespace CgiHub {
          * @param requestOptions 请求参数
          * @return 修改后的响应结果 (支持 Promise)
          * */
-        afterFetch?: <TResp>(response: any, requestOptions: RequestOptions) => PromiseLike<TResp | any> | TResp;
+        afterFetch?: <TResp>(response: any, requestOptions: RequestOptions) => PromiseLike<TResp | any> | TResp | any;
         /**
          * 异常处理公共方法
          * @lifecycle errorHandler
@@ -31,16 +31,17 @@ export declare namespace CgiHub {
          * @param { function } retry 重试本次请求
          * @return 修改后的响应结果 (支持 Promise)
          * */
-        errorHandler?: <TResp>(response: any, requestOptions: RequestOptions, retry: <TResp>(resolve: any, reject: any) => PromiseLike<TResp | any>) => PromiseLike<TResp | any> | TResp;
+        errorHandler?: <TResp>(response: any, requestOptions: RequestOptions, retry: <TResp>(resolve: any, reject: any) => PromiseLike<TResp>) => PromiseLike<TResp> | TResp;
     }
+    type CallbackFunction = (...args: any) => any;
     interface RequestOptions {
         url: string;
         method: string;
         data?: object;
         [key: string]: any;
     }
-    type Request = <TResp>(options: RequestOptions) => PromiseLike<TResp | any>;
-    type CgiCaller = <TResp>(data?: any, options?: RequestOptions) => PromiseLike<TResp | any>;
+    type Request = <TResp>(options: RequestOptions) => PromiseLike<TResp>;
+    type CgiCaller = <TResp>(data?: any, options?: RequestOptions) => PromiseLike<TResp> | any;
     interface CgiList {
         [namespace: string]: CgiList | CgiCaller;
     }
