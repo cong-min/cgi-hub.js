@@ -1,5 +1,7 @@
 @tencent/
 
+package-lock.json
+
 temp
 coverage
 .DS_Store
