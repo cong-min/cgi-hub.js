@@ -49,14 +49,14 @@ const request = requestOptions => (
 **提供插件：**
 
 - Web
-  - [web-xhr.fetch.ts](/plugins/web-xhr.fetch.ts)
-  - [web-fetch.fetch.ts](/plugins/web-fetch.fetch.ts)
-  - [axios.fetch.ts](/plugins/axios.fetch.ts)
+  - web-xhr.fetch.ts 待开发
+  - web-fetch.fetch.ts 待开发
+  - axios.fetch.ts 待开发
 - 小程序
-  - [mp-native.fetch.ts](/plugins/mp-native.fetch.ts)
-  - [we-request.fetch.ts](/plugins/we-request.fetch.ts)
+  - mp-native.fetch.ts 待开发
+  - [we-request.fetch.ts](../plugins/we-request.fetch.ts)
 - Node.js
-  - [node-native.fetch.js](/plugins/node-native.fetch.js)
+  - node-native.fetch.js 待开发
 
 ## afterFetch
 
@@ -78,7 +78,7 @@ const request = requestOptions => (
 **提供插件：**
 
 - Web
-  - [element-ui.errorHandler.ts](/plugins/element-ui.errorHandler.ts)
+  - element-ui.errorHandler.ts 待开发
 - 小程序
-  - [mp.errorHandler.ts](/plugins/mp.errorHandler.ts)
+  - [mp.errorHandler.ts](../plugins/mp.errorHandler.ts)
 - Node.js

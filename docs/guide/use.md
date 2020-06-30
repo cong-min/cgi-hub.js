@@ -10,9 +10,9 @@
 
 ### 1、创建 `request`
 
-在项目中创建 `cgi-hub/request.ts` 文件，在这个文件内引入 `npm` 包 `cgi-hub.js` ，使用其静态方法 `CgiHub.createRequest` 对请求流程进行创建，参数 `lifecycle` 为 [请求生命周期](/guide/lifecycle)，提供的 4 个生命周期钩子函数可根据业务需求自定义实现，都须返回 `Promise` 。
+在项目中创建 `cgi-hub/request.ts` 文件，在这个文件内引入 `npm` 包 `cgi-hub.js` ，使用其静态方法 `CgiHub.createRequest` 对请求流程进行创建，参数 `lifecycle` 为 [请求生命周期](./lifecycle)，提供的 4 个生命周期钩子函数可根据业务需求自定义实现，都须返回 `Promise` 。
 
-**使用插件：** 文档左侧导航里也提供了覆盖小程序端、Web端等各类场景下的请求生命周期 [插件](/plugins/) 代码，推荐参考并按需进行使用。
+**使用插件：** 文档左侧导航里也提供了覆盖小程序端、Web端等各类场景下的请求生命周期 [插件](../plugins/) 代码，推荐参考并按需进行使用。
 
 ```ts
 /* request.ts */
@@ -136,7 +136,7 @@ cgi.use.login({
 搭配 IDE，可对请求与响应数据类型进行推导与提示，利用 TS & JSDoc 还将展示更多能力。
 
 ::: tip 实践与规范
-实际场景下的应用建议查阅 [实践与规范](/plugins/)，按需参考
+实际场景下的应用建议查阅 [实践与规范](../plugins/)，按需参考
 :::
 
 
