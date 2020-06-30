@@ -3,7 +3,7 @@
 
 ## 自助接入
 
-![推荐项目结构](/imgs/project-structure.png)
+<img :src="$withBase('/imgs/project-structure.png')" alt="推荐项目结构">
 
 上图介绍了 `cgi-hub.js` 在实际项目中扮演的角色，同时也是**推荐的项目结构**。下面会对这个结构进行概述。
 
