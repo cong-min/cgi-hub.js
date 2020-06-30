@@ -98,14 +98,14 @@ export class CgiHub<TCGI extends CgiHub.CgiList> {
         // 发起请求, 类型断言
         .then(fetch)
         // 请求后
-        .then(
-          response => afterFetch(response, requestOptions),
-          // 统一异常处理
-          error => errorHandler(
-            error, requestOptions,
-            (resolve, reject) => request(requestOptions).then(resolve, reject),
-          ),
-        )
+        .then(response => afterFetch(response, requestOptions))
+      // 统一异常处理
+        .catch(error => errorHandler(
+          error,
+          requestOptions,
+          // retry
+          (resolve, reject) => request(requestOptions).then(resolve, reject),
+        ))
     );
 
     // request 类型断言
