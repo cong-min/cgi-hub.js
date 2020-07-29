@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板</title>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(0.000000, 42.000000)">
+            <path d="M243.003472,73.3628112 L200.62934,9.34193348 C196.764898,3.5049377 190.259845,0 183.294271,0 L66.7057292,0 C59.7401552,0 53.2351021,3.5049377 49.3706597,9.34193348 L6.99652778,73.3628112 C2.43412757,80.2565593 0,88.3562183 0,96.6411434 L0,104.916427 C0,93.327678 9.32740105,83.9331412 20.8333333,83.9331412 L229.166667,83.9331412 C240.672599,83.9331412 250,93.327678 250,104.916427 L250,96.6411434 C250,88.3562183 247.565872,80.2565593 243.003472,73.3628112 Z" id="形状" fill="#E0E6EB" fill-rule="nonzero"></path>
+            <path d="M20.8333333,83.259366 C9.32740105,83.259366 0,92.6323557 0,104.194524 L0,146.064841 C0,157.62701 9.32740105,167 20.8333333,167 L229.166667,167 C240.672599,167 250,157.62701 250,146.064841 L250,104.194524 C250,92.6323557 240.672599,83.259366 229.166667,83.259366 L20.8333333,83.259366 Z" id="形状" fill="#B3BFCC" fill-rule="nonzero"></path>
+            <rect id="矩形" fill-opacity="0.55" fill="#FFFFFF" x="181" y="101" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill-opacity="0.75" fill="#FFFFFF" x="209" y="129" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill-opacity="0.6" fill="#FFFFFF" x="153" y="101" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill="#E0E6EB" x="181" y="129" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill="#E0E6EB" x="209" y="101" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill="#E0E6EB" x="125" y="129" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill-opacity="0.6" fill="#E0E6EB" x="153" y="129" width="20.6333973" height="20.6945245" rx="6"></rect>
+            <rect id="矩形" fill-opacity="0.75" fill="#E0E6EB" x="125" y="101" width="20.6333973" height="20.6945245" rx="6"></rect>
+        </g>
+    </g>
+</svg>
