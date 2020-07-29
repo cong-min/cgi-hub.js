@@ -1,5 +1,8 @@
 # 请求生命周期
 
+<img :src="$withBase('/imgs/lifecycle.png')" alt="请求生命周期">
+
+
 `CgiHub.createRequest(lifecycle)` 静态方法可以用来创建标准化的请求函数，其中参数 `lifecycle` 代表了请求的生命周期：
 
 - **beforeFetch：** 请求前
